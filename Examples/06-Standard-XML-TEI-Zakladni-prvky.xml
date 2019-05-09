@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<priklady xmlns:tei="http://www.tei-c.org/ns/1.0" version="3.3.0">
+    <priklad n="1" popis="transkribované (reg) a původní transliterované (orig) znění; nejde o chybu, pouze o upozornění na podobu v prameni">
+        <tei:p>Chceš li, zabij 
+            <tei:note n="1">
+                <tei:choice>
+                    <tei:reg>zabij</tei:reg>
+                    <tei:orig>zabig</tei:orig>
+                </tei:choice>
+            </tei:note> mě, </tei:p>
+    </priklad>
+    <priklad n="2" popis="opravené znění v transkripci (corr) a původní transliterované chybné znění (sic); jde o chybu s upozorněním na podobu v prameni">
+        <tei:p>snad odpustí
+            <tei:note n="a">
+                <tei:choice>
+                    <tei:corr>odpustí</tei:corr>
+                    <tei:sic>od/puſtie</tei:sic>
+                </tei:choice>
+            </tei:note>
+             a smiluje se </tei:p>
+    </priklad>
+    <priklad n="3" popis="opravené (corr) a původní znění (sic) jako součást hlavního textu (bez poznámky &lt;note&gt;);">
+        <tei:p>snad odpustí
+                <tei:choice>
+                    <tei:corr>odpustí</tei:corr>
+                    <tei:sic>od/puſtie</tei:sic>
+                </tei:choice>
+             a smiluje se </tei:p>
+    </priklad>
+</priklady>

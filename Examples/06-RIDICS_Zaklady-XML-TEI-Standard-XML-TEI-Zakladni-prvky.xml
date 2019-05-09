@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_minimal.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_minimal.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Příklady na základní značky XML TEI</title>
+         </titleStmt>
+         <publicationStmt>
+        <publisher>oddělení vývoje jazyka Ústavu pro jazyk český AV ČR, v. v. i.<email>vyvoj@ujc.cas.cz</email></publisher>
+        <pubPlace>Praha</pubPlace>
+        <date>2019</date>
+       <availability status="restricted"><licence target="http://creativecommons.org/licenses/by-sa/4.0/">Toto dílo podléhá licenci Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní Licence.</licence></availability>
+      </publicationStmt>
+         <sourceDesc>
+            <p>Příklady jsou převzaty z existujících materiálů Ústavu pro jazyk český AV Č, v. v. i., nebo z TEI Guidelines, popř. vytvořeny ad hoc.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>Textově-kritický aparát, elementy &lt;choice&gt;, &lt;sic&gt;, &lt;corr&gt;, &lt;reg&gt; ap.</head>
+            <div n="1">
+               <head>transkribované (reg) a původní transliterované (orig) znění; nejde o chybu, pouze o upozornění na podobu v prameni</head>
+               <p>Chceš li, zabij
+                  <note>
+                     <choice>
+                        <reg>zabij</reg>
+                        <orig>zabig</orig>
+                     </choice>
+                  </note>
+                   mě, </p>
+            </div>
+            <div n="2">
+               <head>opravené znění v transkripci (corr) a původní transliterované chybné znění (sic); jde o chybu s upozorněním na podobu v prameni</head>
+               <p>snad odpustí
+                  <note>
+                     <choice>
+                        <corr>odpustí</corr>
+                        <sic>od/puſtie</sic>
+                     </choice>
+                  </note>
+                   a smiluje se </p>
+            </div>
+            <div n="3">
+               <head>opravené (corr) a původní znění (sic) jako součást hlavního textu (bez poznámky &lt;note&gt;);</head>
+               <p>snad
+                  <choice>
+                     <corr>odpustí</corr>
+                     <sic>od/puſtie</sic>
+                  </choice>
+                   a smiluje se </p>
+            </div>
+            <div n="4">
+               <head>opravené (corr) a původní znění (sic) jako součást hlavního textu v transliterované podobě, doplněné o podobu transkribovanou (reg)</head>
+               <p>ſnad
+                  <choice>
+                     <sic>od<lb break="no" />puſtie</sic>
+                     <corr>odpuſti</corr>
+                     <reg>odpustí</reg>
+                  </choice>
+                   a ſmiluge ſe </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

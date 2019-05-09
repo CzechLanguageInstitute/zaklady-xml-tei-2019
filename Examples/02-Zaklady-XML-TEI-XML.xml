@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<priklady>
+    <priklad n="1" popis="počáteční a koncové mezery uvnitř elementu">
+        <titul> Mgr. </titul>
+        <titul xml:space="preserve"> Mgr. </titul>
+    </priklad>
+    <priklad n="2" popis="mezery a prázdné odstavce v elementu, který obsahuje kombinaci textu a elementů">
+        <osoba><titul>Mgr.</titul><krestni>Eva</krestni><prijmeni>Lehečková</prijmeni></osoba>
+        <osoba><titul>Mgr.</titul> <krestni>Eva</krestni> <prijmeni>Lehečková</prijmeni> <hodnost>Ph.D.</hodnost></osoba>
+        <osoba>
+            <titul>Mgr.</titul>
+            <krestni>Eva</krestni>
+            <prijmeni>Lehečková</prijmeni>
+            <hodnost>Ph.D.</hodnost>
+        </osoba>
+    </priklad>
+    <priklad n="3" popis="hodnota v atributu">
+        <titul typ="vysokoškolský
+            ">Mgr.</titul>
+    </priklad>
+     <priklad n="4" popis="komentář">
+         <!-- nelze použít komentář v atributu -->
+         <!-- 
+             komentař
+             ve více řádcích
+         -->
+         <osoba><titul><!-- komentář --> Mgr.</titul><krestni varianta="Ev">Eva</krestni><!--<prijmeni>Lehečková</prijmeni>--></osoba>
+     </priklad>
+    <priklad n="5" popis="správné formátování">
+        <!--<2clanek>název elementu začíná číslicí</2clanek>-->
+        <!--<clanek typ="časopis" typ="autorský">dva stejně pojmenované atributy</clanek>-->
+    </priklad>
+    <priklad n="6" popis="struktura dokumetu XML">
+        <instituce>
+            <nazev>FF UK</nazev>
+            <osoba inicialy="EL">
+                <titul>Mgr.</titul>
+                <krestni>Eva</krestni>
+                <prijmeni>Lehečková</prijmeni>
+                <hodnost>Ph.D.</hodnost>
+            </osoba>
+        </instituce>
+    </priklad>
+</priklady>
